@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <style>
+    section {
+      margin-top: 20px;
+    }
+
+    /* .poll-option {
+      margin-bottom: 25x;
+    } */
+
+    span.poll-option__label {
+      font-weight: bold;
+    }
+
+    table.poll-option__result {
+      width: 100%;
+    }
+
+    tr,
+    td {
+      padding: 0;
+    }
+
+    td:nth-child(odd) {
+      width: 40px;
+    }
+
+    td:nth-child(even) {
+      border: 0;
+      height: 100%;
+      position: relative;
+      vertical-align: center;
+      width: 100%;
+    }
+
+    td:first-child {
+      padding-right: 20px;
+    }
+
+    td:last-child {
+      padding-left: 20px;
+    }
+
+    .poll {
+      border-radius: 3px;
+      display: block;
+      height: 6px;
+      position: absolute;
+      top: 5px;
+      transform: translateY(-50%);
+    }
+
+    span:first-child {
+      background: rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+
+    .lastchild {
+      background:aliceblue;
+      background-image: linear-gradient(to right, #ff5a00, #e3a417);
+    }
+
+
+    .link {
+      margin-right: 10px;
+      display: inline-block;
+      color: #000;
+      background: rgb(255, 196, 0);
+      text-decoration: none;
+    }
+
+    .link:hover {
+      text-decoration: none;
+      color: #000;
+    }
+
+    /*===================*/
+    /* GROW ROTATE
+/*===================*/
+
+    .grow-rotate-on-hover,
+    .hov {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+    }
+
+    .hov:hover {
+      -webkit-transform: scale(1.05)rotate(2deg);
+      transform: scale(1.05) rotate(2deg);
+    }
+
+    .grow-rotate-on-hover:hover,
+    .grow-rotate-on-hover:focus,
+    .grow-rotate-on-hover:active {
+      -webkit-transform: scale(1.1) rotate(4deg);
+      transform: scale(1.1) rotate(4deg);
+      box-shadow: 10px 10px 5px 5px rgb(189, 188, 188);
+      background-color: white;
+    }
+
+    .w {
+      width: 500px;
+    }
+
+    .v {
+      width: 250px;
+      height: 300px;
+    }
+
+    .a {
+      font-size: 80px;
+      margin: 40px;
+    }
+
+    .b {
+      background-color: white;
+    }
+
+    .b:hover,
+    .b:active {
+      background-color: rgb(255, 196, 0);
+      -webkit-transform: scale(1.1) rotate(3deg);
+      transform: scale(1.1) rotate(3deg);
+      /* box-shadow: 0px 5px  rgb(218, 198, 198) ; */
+      box-shadow: 0px 5px 10px grey;
+
+    }
+
+    .c {
+      background-color: greenyellow;
+    }
+
+    .f {
+      background-color: rgb(112, 179, 12);
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg m-3">
+    <div class="container-fluid">
+      <h1><a class="navbar-brand fs-1" href="#">ToolM5</a></h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end  fs-4" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-dark" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <a class="nav-link"><button class="rounded-pill  link link-one grow-rotate-on-hover p-2"> Get Started
+              <span
+                class=" border rounded-circle ps-1 pe-1 m-2 text-warning bg-dark border-dark">&nbsp;>&nbsp;</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-warning border rounded-4 container ">
+    <div class="row">
+      <div class="col-md-6 col-12">
+        <h1 class="a">Illustration <br>Design</h1>
+        <hr>
+        <h4 class="m-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
+        <a class="nav-link"><button class="rounded-pill  p-2 link link-one b"> Get Started
+            <span class=" border rounded-circle ps-1 pe-1 m-2 text-light bg-dark">&nbsp;>&nbsp;</button></a>
+
+      </div>
+      <div class="col-md-6 ">
+        <img src="./images/features3.jpg" class="hov border rounded m-4 w" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-12  ">
+      <div class=" bg-success p-2 text-dark bg-opacity-10 container bg-muted m-5 border rounded-4 ">
+        <div class="container mb-5">
+          <h1>Professional Illustration Design</h1>
+
+          <img src="./images/features2.jpg" class="border rounded-4 w m-4" alt="">
+          <hr>
+          <button class="rounded-pill  ps-3 pe-3 p-2 link link-one b ms-5 mb-3"> Design</button><br>
+          <button class="rounded-pill  ps-3 pe-3 p-2 link link-one b ms-5 mt-2">
+            Photoshop</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="rounded-pill  link link-one grow-rotate-on-hover p-2 ps-3 ms-5 "> Get Started
+            <span class=" border rounded-circle  m-2 border-dark text-warning bg-dark  ">&nbsp;+&nbsp;</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="c container m-5 me-5  border rounded-4">
+        <div class="container">
+          <h5 class="m-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5><br><br><br>
+          <button class="rounded-pill  ps-3 pe-3 p-2 link link-one b ms-3 mb-3"> Read more</button><br>
+        </div>
+      </div>
+      <div class="bg-light ms-5 me-5  container border rounded-4">
+        <div class="container">
+          <h5 class="m-5">Nullam consectetur dolor vel ex ullamcorper, non viverra neque aliquet. Vivamus sed nulla
+            rhoncus.</h5>
+        </div><br><br><br><br><br><br>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <h1>About Us</h1>
+    <hr>
+    <h5 class="fs-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus mi est, vel mattis enim
+      malesuada at. Suspendisse potenti. Mauris eu leo nulla. Quisque eget dolor accumsan, blandit orci sit amet,
+      pellentesque purus. Mauris a orci ante. Duis dictum aliquam commodo. Maecenas commodo dolor lorem.</h5>
+  </div>
+  <div class="container-fluid mt-5">
+    <h2>Our Features</h2>
+    <div class="container bg-light border rounded-4">
+      <div class="row">
+        <div class="col-md-3 bg-warning me-4 ms-5 mt-5 mb-5 border rounded-3 hov">
+          <h5>Professional Toolkits</h5>
+          <h3>lllustration Design</h3><br>
+          <img src="./images/features1.jpg " class="v border rounded-3" alt=""><br><br><br>
+          <button class="rounded-pill  p-2 link link-one b"> Get Started
+            <span class=" border-dark rounded-circle ps-1 pe-1 m-2 text-light bg-dark">&nbsp;>&nbsp;</button></a><span
+            class="fs-3"> 12$</span><br><br>
+
+        </div>
+        <div class="col-md-3 bg-light me-4 ms-5 mt-5 mb-5 border rounded-3 hov">
+          <h5>Professional Toolkits</h5>
+          <h3>Digital Art</h3><br>
+          <img src="./images/features2.jpg " class="v border rounded-3" alt=""><br><br><br>
+          <button class="rounded-pill  p-2 link link-one b"> Get Started
+            <span
+              class=" border-dark rounded-circle ps-1 pe-1 m-2 text-light bg-dark">&nbsp;>&nbsp;</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+            class="fs-3"> 18$</span><br><br><br>
+        </div>
+        <div class="col-md-3 f me-4 ms-5  mt-5 mb-5 border rounded-3  hov">
+          <h5>Professional Toolkits</h5>
+          <h3>Digital Art</h3><br>
+          <img src="./images/features3.jpg " class="v border rounded-3" alt=""><br><br><br>
+          <button class="rounded-pill  p-2 link link-one b"> Get Started
+            <span
+              class=" border-dark rounded-circle ps-1 pe-1 m-2 text-light bg-dark">&nbsp;>&nbsp;</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+            class="fs-3"> 18$</span><br><br><br>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="container m-5">
+        <h1>Our Skills</h1> <br>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris felis, faucibus at tincidunt vel, ultrices
+          vitae mauris. Pellentesque ante. Praesent posuere dignissim nibh in finibus. Nunc rutrum nibh pellentesque,
+          viverra dolor quis, sollicitudin libero.</h5>
+
+      </div>
+    </div>
+   
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
